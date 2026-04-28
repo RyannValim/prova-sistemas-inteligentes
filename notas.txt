@@ -1,0 +1,13 @@
+df.dtypes mostra que o dataset está dividido entre 'float64' e 'str'
+
+O dataset não possui nenhum valor ausente.
+
+Separação e como tratar cada coluna:
+    - Dados numéricos (MINMAXSCALER NORM): ['Age', 'Height', 'Weight', 'FCVC', 'NCP', 'CH20', 'FAF', 'TUE']
+    - Dados ordinais (LABEL ENCODER): ['Gender', 'family_history_with_overweight', 'FAVC', 'SMOKE', 'SCC']
+    - Dados ordinais (ORDINAL ENCODER): ['CAEC', 'CALC']
+    - Dados nominais (OHE ENCODER): ['MTRANS']
+
+    colunas_label_encoder = ['Gender', 'family_history_with_overweight', 'FAVC', 'SMOKE', 'SCC']
+    colunas_ordinal_encoder = ['CAEC', 'CALC']
+    colunas_ohe_encoder = ['MTRANS']
